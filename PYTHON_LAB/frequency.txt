@@ -1,0 +1,13 @@
+big_record = {}
+def test_tuple(list2):
+  for item in list2:
+    if type(item) is int:
+      if item not in big_record:
+        big_record[item]=1
+      else:
+        big_record[item]+=1
+    else:
+      test_tuple(item)  
+list2 = eval(input("enter"))
+test_tuple(list2)
+print(big_record)

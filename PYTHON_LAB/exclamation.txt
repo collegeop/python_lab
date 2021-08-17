@@ -1,0 +1,10 @@
+def exclamation(new_str):
+  vowels = "aeiou"
+  arr = ""
+  for item in new_str:
+    if item not in vowels:
+      arr = arr + item
+    else:
+      arr=arr+item*4
+  print(arr+"!")
+exclamation("lokesh")

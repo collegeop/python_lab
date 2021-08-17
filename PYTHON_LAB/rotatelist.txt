@@ -1,0 +1,8 @@
+def rotatelis(ls,k):
+  l = len(ls)
+  if l<=0:
+    return ls
+  print(ls[l-k:]+ls[:l-k])
+# list1 = eval(input("enter"))
+# k = int(input("enter"))
+(rotatelis([1,2,3,4,5],3))

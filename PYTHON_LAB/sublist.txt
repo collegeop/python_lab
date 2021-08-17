@@ -1,0 +1,10 @@
+def sublist(list1,list2):
+  for item in list1:
+    index=0
+    if item not in list2[index:]:
+      return False
+    index = list2.index(item)
+    return True
+list1 = eval(input("enter"))
+list2 = eval(input("enter"))
+print(sublist(list1,list2))

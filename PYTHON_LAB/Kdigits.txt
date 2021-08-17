@@ -1,0 +1,15 @@
+def test_list(tup,k):
+  klist = []
+  for item in tup:
+    flag = True
+    for i in range(len(item)):
+     conv = str(item[i])
+     if len(conv)!=k:
+       flag = False
+       break
+     if flag:
+       klist.append(item)
+  return klist
+list2 = eval(input("enter"))
+k = int(input("enter k"))
+print(test_list(list2,k))

@@ -1,0 +1,20 @@
+class city:
+  names = ""
+  places = list()
+  def __init__(self,names):
+    self.names = names
+  def __init__(self,names,places):
+    self.names = names
+    self.places = places
+  def add_places(self,places):
+    self.places.append(places)
+  def remove_places(self,places):
+    self.places.remove(places)
+  def display(self):
+    print(self.names,":",self.places)
+c=city("bangalore",["mg road","yeswantpur","rt nagar"])
+c.display()
+c.add_places("malleshwaram")
+c.display()
+c.remove_places("mg road")
+c.display()

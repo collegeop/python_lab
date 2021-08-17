@@ -1,0 +1,6 @@
+count = int(input("how many dictionaries?"))
+global_dict = {}
+for i in range(0,count):
+  to_join= eval(input("enter the dictionary"))
+  global_dict.update(to_join)
+print(global_dict)
